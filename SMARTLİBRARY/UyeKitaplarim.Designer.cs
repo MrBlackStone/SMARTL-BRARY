@@ -66,6 +66,7 @@ namespace SMARTLİBRARY
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties30 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties31 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties32 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.yazar_txt = new Bunifu.UI.WinForms.BunifuTextBox();
             this.ara_txt = new Bunifu.UI.WinForms.BunifuTextBox();
@@ -78,6 +79,7 @@ namespace SMARTLİBRARY
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.bitis_txt = new Bunifu.UI.WinForms.BunifuTextBox();
             this.basla_txt = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.Temizle_Btn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             ((System.ComponentModel.ISupportInitialize)(this.kitapDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -86,9 +88,10 @@ namespace SMARTLİBRARY
             // 
             this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.LightGray;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(452, 12);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(678, 18);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(471, 350);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(706, 538);
             this.flowLayoutPanel1.TabIndex = 84;
             // 
             // yazar_txt
@@ -118,9 +121,10 @@ namespace SMARTLİBRARY
             this.yazar_txt.IconRight = null;
             this.yazar_txt.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.yazar_txt.Lines = new string[0];
-            this.yazar_txt.Location = new System.Drawing.Point(278, 12);
+            this.yazar_txt.Location = new System.Drawing.Point(417, 18);
+            this.yazar_txt.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.yazar_txt.MaxLength = 32767;
-            this.yazar_txt.MinimumSize = new System.Drawing.Size(1, 1);
+            this.yazar_txt.MinimumSize = new System.Drawing.Size(2, 2);
             this.yazar_txt.Modified = false;
             this.yazar_txt.Multiline = false;
             this.yazar_txt.Name = "yazar_txt";
@@ -144,7 +148,7 @@ namespace SMARTLİBRARY
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.yazar_txt.OnIdleState = stateProperties4;
-            this.yazar_txt.Padding = new System.Windows.Forms.Padding(3);
+            this.yazar_txt.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.yazar_txt.PasswordChar = '\0';
             this.yazar_txt.PlaceholderForeColor = System.Drawing.Color.DimGray;
             this.yazar_txt.PlaceholderText = "Yazar";
@@ -154,7 +158,7 @@ namespace SMARTLİBRARY
             this.yazar_txt.SelectionLength = 0;
             this.yazar_txt.SelectionStart = 0;
             this.yazar_txt.ShortcutsEnabled = true;
-            this.yazar_txt.Size = new System.Drawing.Size(168, 37);
+            this.yazar_txt.Size = new System.Drawing.Size(252, 57);
             this.yazar_txt.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.yazar_txt.TabIndex = 76;
             this.yazar_txt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -192,9 +196,10 @@ namespace SMARTLİBRARY
             this.ara_txt.IconRight = null;
             this.ara_txt.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.ara_txt.Lines = new string[0];
-            this.ara_txt.Location = new System.Drawing.Point(215, 282);
+            this.ara_txt.Location = new System.Drawing.Point(322, 434);
+            this.ara_txt.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ara_txt.MaxLength = 32767;
-            this.ara_txt.MinimumSize = new System.Drawing.Size(1, 1);
+            this.ara_txt.MinimumSize = new System.Drawing.Size(2, 2);
             this.ara_txt.Modified = false;
             this.ara_txt.Multiline = false;
             this.ara_txt.Name = "ara_txt";
@@ -218,7 +223,7 @@ namespace SMARTLİBRARY
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.ara_txt.OnIdleState = stateProperties8;
-            this.ara_txt.Padding = new System.Windows.Forms.Padding(3);
+            this.ara_txt.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ara_txt.PasswordChar = '\0';
             this.ara_txt.PlaceholderForeColor = System.Drawing.Color.DimGray;
             this.ara_txt.PlaceholderText = "Kitap İsmi";
@@ -228,7 +233,7 @@ namespace SMARTLİBRARY
             this.ara_txt.SelectionLength = 0;
             this.ara_txt.SelectionStart = 0;
             this.ara_txt.ShortcutsEnabled = true;
-            this.ara_txt.Size = new System.Drawing.Size(231, 37);
+            this.ara_txt.Size = new System.Drawing.Size(346, 57);
             this.ara_txt.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.ara_txt.TabIndex = 82;
             this.ara_txt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -286,7 +291,8 @@ namespace SMARTLİBRARY
             this.AraBtn.IdleIconLeftImage = null;
             this.AraBtn.IdleIconRightImage = null;
             this.AraBtn.IndicateFocus = false;
-            this.AraBtn.Location = new System.Drawing.Point(215, 325);
+            this.AraBtn.Location = new System.Drawing.Point(498, 500);
+            this.AraBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.AraBtn.Name = "AraBtn";
             this.AraBtn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AraBtn.OnDisabledState.BorderRadius = 1;
@@ -320,13 +326,14 @@ namespace SMARTLİBRARY
             this.AraBtn.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.AraBtn.OnPressedState.IconLeftImage = null;
             this.AraBtn.OnPressedState.IconRightImage = null;
-            this.AraBtn.Size = new System.Drawing.Size(231, 37);
+            this.AraBtn.Size = new System.Drawing.Size(170, 57);
             this.AraBtn.TabIndex = 81;
             this.AraBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AraBtn.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.AraBtn.TextMarginLeft = 0;
             this.AraBtn.TextPadding = new System.Windows.Forms.Padding(0);
             this.AraBtn.UseDefaultRadiusAndThickness = true;
+            this.AraBtn.Click += new System.EventHandler(this.AraBtn_Click);
             // 
             // kitapDataGridView
             // 
@@ -378,15 +385,17 @@ namespace SMARTLİBRARY
             this.kitapDataGridView.HeaderBackColor = System.Drawing.Color.DodgerBlue;
             this.kitapDataGridView.HeaderBgColor = System.Drawing.Color.Empty;
             this.kitapDataGridView.HeaderForeColor = System.Drawing.Color.White;
-            this.kitapDataGridView.Location = new System.Drawing.Point(12, 368);
+            this.kitapDataGridView.Location = new System.Drawing.Point(18, 566);
+            this.kitapDataGridView.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.kitapDataGridView.Name = "kitapDataGridView";
             this.kitapDataGridView.RowHeadersVisible = false;
             this.kitapDataGridView.RowHeadersWidth = 62;
             this.kitapDataGridView.RowTemplate.Height = 40;
             this.kitapDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.kitapDataGridView.Size = new System.Drawing.Size(911, 219);
+            this.kitapDataGridView.Size = new System.Drawing.Size(1366, 337);
             this.kitapDataGridView.TabIndex = 80;
             this.kitapDataGridView.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            this.kitapDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.kitapDataGridView_CellClick);
             // 
             // ozet_txt
             // 
@@ -415,9 +424,10 @@ namespace SMARTLİBRARY
             this.ozet_txt.IconRight = null;
             this.ozet_txt.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.ozet_txt.Lines = new string[0];
-            this.ozet_txt.Location = new System.Drawing.Point(12, 98);
+            this.ozet_txt.Location = new System.Drawing.Point(18, 151);
+            this.ozet_txt.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ozet_txt.MaxLength = 32767;
-            this.ozet_txt.MinimumSize = new System.Drawing.Size(1, 1);
+            this.ozet_txt.MinimumSize = new System.Drawing.Size(2, 2);
             this.ozet_txt.Modified = false;
             this.ozet_txt.Multiline = true;
             this.ozet_txt.Name = "ozet_txt";
@@ -441,7 +451,7 @@ namespace SMARTLİBRARY
             stateProperties12.ForeColor = System.Drawing.Color.Empty;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.ozet_txt.OnIdleState = stateProperties12;
-            this.ozet_txt.Padding = new System.Windows.Forms.Padding(3);
+            this.ozet_txt.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ozet_txt.PasswordChar = '\0';
             this.ozet_txt.PlaceholderForeColor = System.Drawing.Color.DimGray;
             this.ozet_txt.PlaceholderText = "Özet";
@@ -451,7 +461,7 @@ namespace SMARTLİBRARY
             this.ozet_txt.SelectionLength = 0;
             this.ozet_txt.SelectionStart = 0;
             this.ozet_txt.ShortcutsEnabled = true;
-            this.ozet_txt.Size = new System.Drawing.Size(260, 178);
+            this.ozet_txt.Size = new System.Drawing.Size(390, 274);
             this.ozet_txt.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.ozet_txt.TabIndex = 78;
             this.ozet_txt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -489,9 +499,10 @@ namespace SMARTLİBRARY
             this.tur_txt.IconRight = null;
             this.tur_txt.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.tur_txt.Lines = new string[0];
-            this.tur_txt.Location = new System.Drawing.Point(12, 55);
+            this.tur_txt.Location = new System.Drawing.Point(18, 85);
+            this.tur_txt.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tur_txt.MaxLength = 32767;
-            this.tur_txt.MinimumSize = new System.Drawing.Size(1, 1);
+            this.tur_txt.MinimumSize = new System.Drawing.Size(2, 2);
             this.tur_txt.Modified = false;
             this.tur_txt.Multiline = false;
             this.tur_txt.Name = "tur_txt";
@@ -515,7 +526,7 @@ namespace SMARTLİBRARY
             stateProperties16.ForeColor = System.Drawing.Color.Empty;
             stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.tur_txt.OnIdleState = stateProperties16;
-            this.tur_txt.Padding = new System.Windows.Forms.Padding(3);
+            this.tur_txt.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tur_txt.PasswordChar = '\0';
             this.tur_txt.PlaceholderForeColor = System.Drawing.Color.DimGray;
             this.tur_txt.PlaceholderText = "Tür";
@@ -525,7 +536,7 @@ namespace SMARTLİBRARY
             this.tur_txt.SelectionLength = 0;
             this.tur_txt.SelectionStart = 0;
             this.tur_txt.ShortcutsEnabled = true;
-            this.tur_txt.Size = new System.Drawing.Size(260, 37);
+            this.tur_txt.Size = new System.Drawing.Size(390, 57);
             this.tur_txt.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.tur_txt.TabIndex = 77;
             this.tur_txt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -563,9 +574,10 @@ namespace SMARTLİBRARY
             this.isim_txt.IconRight = null;
             this.isim_txt.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.isim_txt.Lines = new string[0];
-            this.isim_txt.Location = new System.Drawing.Point(12, 12);
+            this.isim_txt.Location = new System.Drawing.Point(18, 18);
+            this.isim_txt.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.isim_txt.MaxLength = 32767;
-            this.isim_txt.MinimumSize = new System.Drawing.Size(1, 1);
+            this.isim_txt.MinimumSize = new System.Drawing.Size(2, 2);
             this.isim_txt.Modified = false;
             this.isim_txt.Multiline = false;
             this.isim_txt.Name = "isim_txt";
@@ -589,7 +601,7 @@ namespace SMARTLİBRARY
             stateProperties20.ForeColor = System.Drawing.Color.Empty;
             stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.isim_txt.OnIdleState = stateProperties20;
-            this.isim_txt.Padding = new System.Windows.Forms.Padding(3);
+            this.isim_txt.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.isim_txt.PasswordChar = '\0';
             this.isim_txt.PlaceholderForeColor = System.Drawing.Color.DimGray;
             this.isim_txt.PlaceholderText = "Kitap İsim";
@@ -599,7 +611,7 @@ namespace SMARTLİBRARY
             this.isim_txt.SelectionLength = 0;
             this.isim_txt.SelectionStart = 0;
             this.isim_txt.ShortcutsEnabled = true;
-            this.isim_txt.Size = new System.Drawing.Size(260, 37);
+            this.isim_txt.Size = new System.Drawing.Size(390, 57);
             this.isim_txt.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.isim_txt.TabIndex = 75;
             this.isim_txt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -637,9 +649,10 @@ namespace SMARTLİBRARY
             this.baski_txt.IconRight = null;
             this.baski_txt.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.baski_txt.Lines = new string[0];
-            this.baski_txt.Location = new System.Drawing.Point(278, 55);
+            this.baski_txt.Location = new System.Drawing.Point(417, 85);
+            this.baski_txt.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.baski_txt.MaxLength = 32767;
-            this.baski_txt.MinimumSize = new System.Drawing.Size(1, 1);
+            this.baski_txt.MinimumSize = new System.Drawing.Size(2, 2);
             this.baski_txt.Modified = false;
             this.baski_txt.Multiline = false;
             this.baski_txt.Name = "baski_txt";
@@ -663,7 +676,7 @@ namespace SMARTLİBRARY
             stateProperties24.ForeColor = System.Drawing.Color.Empty;
             stateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.baski_txt.OnIdleState = stateProperties24;
-            this.baski_txt.Padding = new System.Windows.Forms.Padding(3);
+            this.baski_txt.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.baski_txt.PasswordChar = '\0';
             this.baski_txt.PlaceholderForeColor = System.Drawing.Color.DimGray;
             this.baski_txt.PlaceholderText = "Baskı";
@@ -673,7 +686,7 @@ namespace SMARTLİBRARY
             this.baski_txt.SelectionLength = 0;
             this.baski_txt.SelectionStart = 0;
             this.baski_txt.ShortcutsEnabled = true;
-            this.baski_txt.Size = new System.Drawing.Size(168, 37);
+            this.baski_txt.Size = new System.Drawing.Size(252, 57);
             this.baski_txt.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.baski_txt.TabIndex = 85;
             this.baski_txt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -687,9 +700,10 @@ namespace SMARTLİBRARY
             // pictureBox2
             // 
             this.pictureBox2.Image = global::SMARTLİBRARY.Properties.Resources.m;
-            this.pictureBox2.Location = new System.Drawing.Point(278, 98);
+            this.pictureBox2.Location = new System.Drawing.Point(417, 151);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(168, 178);
+            this.pictureBox2.Size = new System.Drawing.Size(252, 274);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 86;
             this.pictureBox2.TabStop = false;
@@ -721,9 +735,10 @@ namespace SMARTLİBRARY
             this.bitis_txt.IconRight = null;
             this.bitis_txt.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.bitis_txt.Lines = new string[0];
-            this.bitis_txt.Location = new System.Drawing.Point(12, 325);
+            this.bitis_txt.Location = new System.Drawing.Point(18, 500);
+            this.bitis_txt.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bitis_txt.MaxLength = 32767;
-            this.bitis_txt.MinimumSize = new System.Drawing.Size(1, 1);
+            this.bitis_txt.MinimumSize = new System.Drawing.Size(2, 2);
             this.bitis_txt.Modified = false;
             this.bitis_txt.Multiline = false;
             this.bitis_txt.Name = "bitis_txt";
@@ -747,7 +762,7 @@ namespace SMARTLİBRARY
             stateProperties28.ForeColor = System.Drawing.Color.Empty;
             stateProperties28.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.bitis_txt.OnIdleState = stateProperties28;
-            this.bitis_txt.Padding = new System.Windows.Forms.Padding(3);
+            this.bitis_txt.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bitis_txt.PasswordChar = '\0';
             this.bitis_txt.PlaceholderForeColor = System.Drawing.Color.DimGray;
             this.bitis_txt.PlaceholderText = "Bitiş Tarihi";
@@ -757,7 +772,7 @@ namespace SMARTLİBRARY
             this.bitis_txt.SelectionLength = 0;
             this.bitis_txt.SelectionStart = 0;
             this.bitis_txt.ShortcutsEnabled = true;
-            this.bitis_txt.Size = new System.Drawing.Size(197, 37);
+            this.bitis_txt.Size = new System.Drawing.Size(296, 57);
             this.bitis_txt.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.bitis_txt.TabIndex = 87;
             this.bitis_txt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -795,9 +810,10 @@ namespace SMARTLİBRARY
             this.basla_txt.IconRight = null;
             this.basla_txt.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.basla_txt.Lines = new string[0];
-            this.basla_txt.Location = new System.Drawing.Point(12, 282);
+            this.basla_txt.Location = new System.Drawing.Point(18, 434);
+            this.basla_txt.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.basla_txt.MaxLength = 32767;
-            this.basla_txt.MinimumSize = new System.Drawing.Size(1, 1);
+            this.basla_txt.MinimumSize = new System.Drawing.Size(2, 2);
             this.basla_txt.Modified = false;
             this.basla_txt.Multiline = false;
             this.basla_txt.Name = "basla_txt";
@@ -821,7 +837,7 @@ namespace SMARTLİBRARY
             stateProperties32.ForeColor = System.Drawing.Color.Empty;
             stateProperties32.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.basla_txt.OnIdleState = stateProperties32;
-            this.basla_txt.Padding = new System.Windows.Forms.Padding(3);
+            this.basla_txt.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.basla_txt.PasswordChar = '\0';
             this.basla_txt.PlaceholderForeColor = System.Drawing.Color.DimGray;
             this.basla_txt.PlaceholderText = "Başlangıç Tarihi";
@@ -831,7 +847,7 @@ namespace SMARTLİBRARY
             this.basla_txt.SelectionLength = 0;
             this.basla_txt.SelectionStart = 0;
             this.basla_txt.ShortcutsEnabled = true;
-            this.basla_txt.Size = new System.Drawing.Size(197, 37);
+            this.basla_txt.Size = new System.Drawing.Size(296, 57);
             this.basla_txt.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.basla_txt.TabIndex = 88;
             this.basla_txt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -842,12 +858,104 @@ namespace SMARTLİBRARY
             this.basla_txt.UseSystemPasswordChar = false;
             this.basla_txt.WordWrap = true;
             // 
+            // Temizle_Btn
+            // 
+            this.Temizle_Btn.AllowAnimations = true;
+            this.Temizle_Btn.AllowMouseEffects = true;
+            this.Temizle_Btn.AllowToggling = false;
+            this.Temizle_Btn.AnimationSpeed = 200;
+            this.Temizle_Btn.AutoGenerateColors = false;
+            this.Temizle_Btn.AutoRoundBorders = false;
+            this.Temizle_Btn.AutoSizeLeftIcon = true;
+            this.Temizle_Btn.AutoSizeRightIcon = true;
+            this.Temizle_Btn.BackColor = System.Drawing.Color.Transparent;
+            this.Temizle_Btn.BackColor1 = System.Drawing.Color.DarkSlateGray;
+            this.Temizle_Btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Temizle_Btn.BackgroundImage")));
+            this.Temizle_Btn.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.Temizle_Btn.ButtonText = "Temizle";
+            this.Temizle_Btn.ButtonTextMarginLeft = 0;
+            this.Temizle_Btn.ColorContrastOnClick = 45;
+            this.Temizle_Btn.ColorContrastOnHover = 45;
+            this.Temizle_Btn.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.Temizle_Btn.CustomizableEdges = borderEdges2;
+            this.Temizle_Btn.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.Temizle_Btn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.Temizle_Btn.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.Temizle_Btn.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.Temizle_Btn.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.Temizle_Btn.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Temizle_Btn.ForeColor = System.Drawing.Color.White;
+            this.Temizle_Btn.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Temizle_Btn.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.Temizle_Btn.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.Temizle_Btn.IconMarginLeft = 11;
+            this.Temizle_Btn.IconPadding = 10;
+            this.Temizle_Btn.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Temizle_Btn.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.Temizle_Btn.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.Temizle_Btn.IconSize = 25;
+            this.Temizle_Btn.IdleBorderColor = System.Drawing.Color.DarkSlateGray;
+            this.Temizle_Btn.IdleBorderRadius = 1;
+            this.Temizle_Btn.IdleBorderThickness = 1;
+            this.Temizle_Btn.IdleFillColor = System.Drawing.Color.DarkSlateGray;
+            this.Temizle_Btn.IdleIconLeftImage = null;
+            this.Temizle_Btn.IdleIconRightImage = null;
+            this.Temizle_Btn.IndicateFocus = false;
+            this.Temizle_Btn.Location = new System.Drawing.Point(322, 500);
+            this.Temizle_Btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Temizle_Btn.Name = "Temizle_Btn";
+            this.Temizle_Btn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.Temizle_Btn.OnDisabledState.BorderRadius = 1;
+            this.Temizle_Btn.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.Temizle_Btn.OnDisabledState.BorderThickness = 1;
+            this.Temizle_Btn.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.Temizle_Btn.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.Temizle_Btn.OnDisabledState.IconLeftImage = null;
+            this.Temizle_Btn.OnDisabledState.IconRightImage = null;
+            this.Temizle_Btn.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.Temizle_Btn.onHoverState.BorderRadius = 1;
+            this.Temizle_Btn.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.Temizle_Btn.onHoverState.BorderThickness = 1;
+            this.Temizle_Btn.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.Temizle_Btn.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.Temizle_Btn.onHoverState.IconLeftImage = null;
+            this.Temizle_Btn.onHoverState.IconRightImage = null;
+            this.Temizle_Btn.OnIdleState.BorderColor = System.Drawing.Color.DarkSlateGray;
+            this.Temizle_Btn.OnIdleState.BorderRadius = 1;
+            this.Temizle_Btn.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.Temizle_Btn.OnIdleState.BorderThickness = 1;
+            this.Temizle_Btn.OnIdleState.FillColor = System.Drawing.Color.DarkSlateGray;
+            this.Temizle_Btn.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.Temizle_Btn.OnIdleState.IconLeftImage = null;
+            this.Temizle_Btn.OnIdleState.IconRightImage = null;
+            this.Temizle_Btn.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.Temizle_Btn.OnPressedState.BorderRadius = 1;
+            this.Temizle_Btn.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.Temizle_Btn.OnPressedState.BorderThickness = 1;
+            this.Temizle_Btn.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.Temizle_Btn.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.Temizle_Btn.OnPressedState.IconLeftImage = null;
+            this.Temizle_Btn.OnPressedState.IconRightImage = null;
+            this.Temizle_Btn.Size = new System.Drawing.Size(168, 57);
+            this.Temizle_Btn.TabIndex = 110;
+            this.Temizle_Btn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Temizle_Btn.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Temizle_Btn.TextMarginLeft = 0;
+            this.Temizle_Btn.TextPadding = new System.Windows.Forms.Padding(0);
+            this.Temizle_Btn.UseDefaultRadiusAndThickness = true;
+            this.Temizle_Btn.Click += new System.EventHandler(this.Temizle_Btn_Click);
+            // 
             // UyeKitaplarim
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(935, 599);
+            this.ClientSize = new System.Drawing.Size(1402, 922);
+            this.Controls.Add(this.Temizle_Btn);
             this.Controls.Add(this.basla_txt);
             this.Controls.Add(this.bitis_txt);
             this.Controls.Add(this.pictureBox2);
@@ -860,6 +968,7 @@ namespace SMARTLİBRARY
             this.Controls.Add(this.ozet_txt);
             this.Controls.Add(this.tur_txt);
             this.Controls.Add(this.isim_txt);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "UyeKitaplarim";
             this.Text = "Kitaplarım";
             this.Load += new System.EventHandler(this.UyeKitaplarim_Load);
@@ -883,5 +992,6 @@ namespace SMARTLİBRARY
         private System.Windows.Forms.PictureBox pictureBox2;
         private Bunifu.UI.WinForms.BunifuTextBox bitis_txt;
         private Bunifu.UI.WinForms.BunifuTextBox basla_txt;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton Temizle_Btn;
     }
 }

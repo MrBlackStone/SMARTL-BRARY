@@ -24,11 +24,11 @@ namespace SMARTLİBRARY
         {
             InitializeComponent();
         }
-        private void GetData(string tablo1)
+        private void GetData(int tablo1)
         {
 
-            baglantı.Open();
-            komut = new SqlCommand("SELECT  Uyeler.Uye_isim as İsim, Uyeler.Uye_Adres as Adres, Uyeler.Uye_Telefon as Telefon, Uyeler.Uye_Fotograf as Fotoğraf, Uyeler.TcKimlik as Kimlik, Kitaplar.Kitap_İsim as İsim, Kitaplar.Yazar ,Kitaplar.Tur, Kitaplar.Ozet as Özet, Kitaplar.Fotograf as Fotoğraf FROM OduncKitaplar INNER JOIN Uyeler ON OduncKitaplar.FK_UyeID= Uyeler.Uye_id INNER JOIN Kitaplar ON OduncKitaplar.FK_kitapID = Kitaplar.Kitap_id where Kitaplar.Kitap_İsim ='" + tablo1 + "'", baglantı);
+            
+            komut = new SqlCommand("SELECT  Uyeler.Uye_isim as İsim, Uyeler.Uye_Adres as Adres, Uyeler.Uye_Telefon as Telefon, Uyeler.Uye_Fotograf as Fotoğraf, Uyeler.TcKimlik as Kimlik, Kitaplar.Kitap_İsim as İsim, Kitaplar.Yazar ,Kitaplar.Tur, Kitaplar.Ozet as Özet, Kitaplar.Fotograf as Fotoğraf FROM OduncKitaplar INNER JOIN Uyeler ON OduncKitaplar.FK_UyeID= Uyeler.Uye_id INNER JOIN Kitaplar ON OduncKitaplar.FK_kitapID = Kitaplar.Kitap_id where OduncKitaplar.FK_uyeID ='" + tablo1 + "'", baglantı);
             SqlDataReader oku = komut.ExecuteReader();
             flowLayoutPanel1.Controls.Clear();
             while (oku.Read())
@@ -50,13 +50,8 @@ namespace SMARTLİBRARY
 
             }
             oku.Close();
-            ds.Clear();
-            adp.SelectCommand = new SqlCommand("SELECT  Uyeler.Uye_isim as İsim, Uyeler.Uye_Adres as Adres, Uyeler.Uye_Telefon as Telefon, Uyeler.Uye_Fotograf as Fotoğraf, Uyeler.TcKimlik as Kimlik, Kitaplar.Kitap_İsim as İsim, Kitaplar.Yazar ,Kitaplar.Tur, Kitaplar.Ozet as Özet, Kitaplar.Fotograf as Fotoğraf FROM OduncKitaplar INNER JOIN Uyeler ON OduncKitaplar.FK_UyeID= Uyeler.Uye_id INNER JOIN Kitaplar ON OduncKitaplar.FK_kitapID = Kitaplar.Kitap_id where Kitaplar.Kitap_İsim ='" + tablo1 + "'", baglantı);
-
-            adp.Fill(ds, "OduncKitaplar");
-            kitapDataGridView.DataSource = ds;
-            kitapDataGridView.DataMember = "OduncKitaplar";
-            baglantı.Close();
+            
+            
 
         }
 
@@ -65,7 +60,7 @@ namespace SMARTLİBRARY
 
             baglantı.Open();
             pic = new PictureBox();
-            komut = new SqlCommand("SELECT  Kitaplar.Kitap_İsim as İsim, Kitaplar.Yazar ,Kitaplar.Tur, Kitaplar.Ozet as Özet, Kitaplar.Fotograf as Fotoğraf,OduncKitaplar.Odunc_baslangicTarihi as Başlangıç, OduncKitaplar.Odunc_bitisTarihi as Bitiş FROM OduncKitaplar  INNER JOIN Kitaplar ON OduncKitaplar.FK_kitapID = Kitaplar.Kitap_id where OduncKitaplar.FK_uyeID='"+uyeid+"'", baglantı);
+            komut = new SqlCommand("SELECT  Kitaplar.Kitap_İsim as İsim, Kitaplar.Yazar ,Kitaplar.Tur, Kitaplar.Ozet as Özet, Kitaplar.Fotograf as Fotoğraf,OduncKitaplar.Odunc_baslangicTarihi as Başlangıç, OduncKitaplar.Odunc_bitisTarihi as Bitiş, Kitaplar.Baski as Baskı FROM OduncKitaplar  INNER JOIN Kitaplar ON OduncKitaplar.FK_kitapID = Kitaplar.Kitap_id where OduncKitaplar.FK_uyeID='"+uyeid+"'", baglantı);
                 SqlDataReader okuyucu = komut.ExecuteReader();
             if (okuyucu.Read())
             {
@@ -75,6 +70,7 @@ namespace SMARTLİBRARY
                 ozet_txt.Text = okuyucu.GetValue(3).ToString();
                 basla_txt.Text = okuyucu.GetValue(5).ToString();
                 bitis_txt.Text = okuyucu.GetValue(6).ToString();
+                baski_txt.Text = okuyucu.GetValue(7).ToString();
                 pictureBox2.ImageLocation = Application.StartupPath + okuyucu.GetValue(4).ToString();
 
 
@@ -82,14 +78,79 @@ namespace SMARTLİBRARY
 
             }
             okuyucu.Close();
-            
-            adp.SelectCommand = new SqlCommand("SELECT  Kitaplar.Kitap_İsim as İsim, Kitaplar.Yazar ,Kitaplar.Tur, Kitaplar.Ozet as Özet, Kitaplar.Fotograf as Fotoğraf,OduncKitaplar.Odunc_baslangicTarihi as Başlangıç, OduncKitaplar.Odunc_bitisTarihi as Bitiş FROM OduncKitaplar  INNER JOIN Kitaplar ON OduncKitaplar.FK_kitapID = Kitaplar.Kitap_id where OduncKitaplar.FK_uyeID='" + uyeid + "'", baglantı);
+            GetData(uyeid);
+            adp.SelectCommand = new SqlCommand("SELECT  Kitaplar.Kitap_İsim as İsim, Kitaplar.Yazar ,Kitaplar.Tur, Kitaplar.Ozet as Özet, Kitaplar.Fotograf as Fotoğraf,OduncKitaplar.Odunc_baslangicTarihi as Başlangıç, OduncKitaplar.Odunc_bitisTarihi as Bitiş, Kitaplar.Baski as Baskı FROM OduncKitaplar  INNER JOIN Kitaplar ON OduncKitaplar.FK_kitapID = Kitaplar.Kitap_id where OduncKitaplar.FK_uyeID='" + uyeid + "'", baglantı);
             adp.Fill(ds, "OduncKitaplar");
             kitapDataGridView.DataSource = ds;
             kitapDataGridView.DataMember = "OduncKitaplar";
 
 
 
+            baglantı.Close();
+        }
+
+        private void kitapDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+            int x = e.RowIndex;
+            isim_txt.Text = kitapDataGridView.Rows[x].Cells[0].Value.ToString();
+            yazar_txt.Text = kitapDataGridView.Rows[x].Cells[1].Value.ToString();
+            tur_txt.Text = kitapDataGridView.Rows[x].Cells[2].Value.ToString();
+            ozet_txt.Text = kitapDataGridView.Rows[x].Cells[3].Value.ToString();
+            basla_txt.Text = kitapDataGridView.Rows[x].Cells[5].Value.ToString();
+            bitis_txt.Text = kitapDataGridView.Rows[x].Cells[6].Value.ToString();
+            baski_txt.Text = kitapDataGridView.Rows[x].Cells[7].Value.ToString();
+            pictureBox2.ImageLocation = Application.StartupPath + kitapDataGridView.Rows[x].Cells[4].Value.ToString();
+        }
+
+        private void AraBtn_Click(object sender, EventArgs e)
+        {
+            baglantı.Open();
+            
+            komut = new SqlCommand("SELECT  Kitaplar.Kitap_İsim as İsim, Kitaplar.Yazar ,Kitaplar.Tur, Kitaplar.Ozet as Özet, Kitaplar.Fotograf as Fotoğraf,OduncKitaplar.Odunc_baslangicTarihi as Başlangıç, OduncKitaplar.Odunc_bitisTarihi as Bitiş, Kitaplar.Baski as Baskı FROM OduncKitaplar  INNER JOIN Kitaplar ON OduncKitaplar.FK_kitapID = Kitaplar.Kitap_id where OduncKitaplar.FK_uyeID='" + uyeid + "' and Kitaplar.Kitap_İsim='" + ara_txt.Text + "'", baglantı);
+            SqlDataReader okuyucu = komut.ExecuteReader();
+            if (okuyucu.Read())
+            {
+                isim_txt.Text = okuyucu.GetValue(0).ToString();
+                yazar_txt.Text = okuyucu.GetValue(1).ToString();
+                tur_txt.Text = okuyucu.GetValue(2).ToString();
+                ozet_txt.Text = okuyucu.GetValue(3).ToString();
+                basla_txt.Text = okuyucu.GetValue(5).ToString();
+                bitis_txt.Text = okuyucu.GetValue(6).ToString();
+                baski_txt.Text = okuyucu.GetValue(7).ToString();
+                pictureBox2.ImageLocation = Application.StartupPath + okuyucu.GetValue(4).ToString();
+
+
+
+
+            }
+            okuyucu.Close();
+            ds.Clear();
+
+            adp.SelectCommand = new SqlCommand("SELECT  Kitaplar.Kitap_İsim as İsim, Kitaplar.Yazar ,Kitaplar.Tur, Kitaplar.Ozet as Özet, Kitaplar.Fotograf as Fotoğraf,OduncKitaplar.Odunc_baslangicTarihi as Başlangıç, OduncKitaplar.Odunc_bitisTarihi as Bitiş, Kitaplar.Baski as Baskı FROM OduncKitaplar  INNER JOIN Kitaplar ON OduncKitaplar.FK_kitapID = Kitaplar.Kitap_id where OduncKitaplar.FK_uyeID='" + uyeid + "' and Kitaplar.Kitap_İsim='"+ara_txt.Text+"'", baglantı);
+            adp.Fill(ds, "OduncKitaplar");
+            kitapDataGridView.DataSource = ds;
+            kitapDataGridView.DataMember = "OduncKitaplar";
+            baglantı.Close();
+        }
+
+        private void Temizle_Btn_Click(object sender, EventArgs e)
+        {
+
+            isim_txt.Clear();
+            yazar_txt.Clear();
+            tur_txt.Clear();
+            ozet_txt.Clear();
+            baski_txt.Clear();
+            basla_txt.Clear();
+            bitis_txt.Clear();
+            pictureBox2.Image = null;
+            baglantı.Open();
+            ds.Clear();
+            adp.SelectCommand = new SqlCommand("SELECT  Kitaplar.Kitap_İsim as İsim, Kitaplar.Yazar ,Kitaplar.Tur, Kitaplar.Ozet as Özet, Kitaplar.Fotograf as Fotoğraf,OduncKitaplar.Odunc_baslangicTarihi as Başlangıç, OduncKitaplar.Odunc_bitisTarihi as Bitiş, Kitaplar.Baski as Baskı FROM OduncKitaplar  INNER JOIN Kitaplar ON OduncKitaplar.FK_kitapID = Kitaplar.Kitap_id where OduncKitaplar.FK_uyeID='" + uyeid + "'", baglantı);
+            adp.Fill(ds, "OduncKitaplar");
+            kitapDataGridView.DataSource = ds;
+            kitapDataGridView.DataMember = "OduncKitaplar";
             baglantı.Close();
         }
     }
