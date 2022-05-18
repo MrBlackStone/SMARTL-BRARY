@@ -30,7 +30,7 @@ namespace SMARTLİBRARY
             baglantı.Open();
             YoneticiPanel yntcpnl = new YoneticiPanel();
             CalisanPanel clsnpnl = new CalisanPanel();
-            UyePanelYeni upy = new UyePanelYeni();
+
             UyePanel uyepnl = new UyePanel();
             SqlCommand kontrol = new SqlCommand("select * from Calisanlar where CalisanKullaniciAdi='" + kullaniciAdTxt.Text + "' and CalisanSifre='" + sifreTxt.Text + "'", baglantı);
             SqlDataReader oku = kontrol.ExecuteReader();

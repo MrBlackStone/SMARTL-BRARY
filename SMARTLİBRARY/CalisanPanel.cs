@@ -74,5 +74,10 @@ namespace SMARTLİBRARY
         {
 
         }
+
+        private void istekbtn_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Yoneticiİstekler(), sender);
+        }
     }
 }

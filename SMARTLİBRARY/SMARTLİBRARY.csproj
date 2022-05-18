@@ -148,12 +148,6 @@
     <Compile Include="UyePanel.Designer.cs">
       <DependentUpon>UyePanel.cs</DependentUpon>
     </Compile>
-    <Compile Include="UyePanelYeni.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UyePanelYeni.Designer.cs">
-      <DependentUpon>UyePanelYeni.cs</DependentUpon>
-    </Compile>
     <Compile Include="Uyeİstek.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -202,6 +196,12 @@
     <Compile Include="YoneticiPanel.Designer.cs">
       <DependentUpon>YoneticiPanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Yoneticiİstekler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yoneticiİstekler.Designer.cs">
+      <DependentUpon>Yoneticiİstekler.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="CalisanPanel.resx">
       <DependentUpon>CalisanPanel.cs</DependentUpon>
     </EmbeddedResource>
@@ -228,9 +228,6 @@
     <EmbeddedResource Include="UyePanel.resx">
       <DependentUpon>UyePanel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UyePanelYeni.resx">
-      <DependentUpon>UyePanelYeni.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Uyeİstek.resx">
       <DependentUpon>Uyeİstek.cs</DependentUpon>
     </EmbeddedResource>
@@ -254,6 +251,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="YoneticiPanel.resx">
       <DependentUpon>YoneticiPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yoneticiİstekler.resx">
+      <DependentUpon>Yoneticiİstekler.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

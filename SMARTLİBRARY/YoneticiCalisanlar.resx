@@ -128,16 +128,6 @@
         2MY+r68AwA/t87oB47HaII/yjtMAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="CalisanCiktiAlBtn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAARoAAAA2CAYAAAAYqlZDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAADUSURBVHhe7dShEYAwAATBlJ4+KSMFALEMMudWrPn3N+aY
-        1+sGiFw7NH8HwDFCA+SEBsgJDZATGiAnNEBOaICc0AA5oQFyQgPkhAbICQ2QExogJzRATmiAnNAAOaEB
-        ckID5IQGyAkNkBMaICc0QE5ogJzQADmhAXJCA+SEBsgJDZATGiAnNEBOaICc0AA5oQFyQgPkhAbICQ2Q
-        ExogJzRATmiAnNAAOaEBckID5IQGyAkNkBMaICc0QE5ogJzQADmhAXJCA+SEBsgJDZDboVnfEeCcuR4q
-        w8MPq7Pg3QAAAABJRU5ErkJggg==
-</value>
-  </data>
   <data name="CalisanSilBtn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAARoAAAA2CAYAAAAYqlZDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -280,6 +270,16 @@
         AgCIhBQAQCSkAAAiIQUAEAkpAIBISAEAREIKACASUgAAkZACAIiEFABAJKQAACIhBQAQCSkAgEhIAQBE
         QgoAIBJSAACRkAIAiIQUAEAkpAAAop+QmnO+92FmZmZm19vtdGYUAAD3jfEFdRgoEGKS9OQAAAAASUVO
         RK5CYII=
+</value>
+  </data>
+  <data name="CalisanCiktiAlBtn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAARoAAAA2CAYAAAAYqlZDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAADUSURBVHhe7dShEYAwAATBlJ4+KSMFALEMMudWrPn3N+aY
+        1+sGiFw7NH8HwDFCA+SEBsgJDZATGiAnNEBOaICc0AA5oQFyQgPkhAbICQ2QExogJzRATmiAnNAAOaEB
+        ckID5IQGyAkNkBMaICc0QE5ogJzQADmhAXJCA+SEBsgJDZATGiAnNEBOaICc0AA5oQFyQgPkhAbICQ2Q
+        ExogJzRATmiAnNAAOaEBckID5IQGyAkNkBMaICc0QE5ogJzQADmhAXJCA+SEBsgJDZDboVnfEeCcuR4q
+        w8MPq7Pg3QAAAABJRU5ErkJggg==
 </value>
   </data>
   <metadata name="backgroundWorker1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
