@@ -47,8 +47,35 @@ namespace SMARTLİBRARY
             komut = new SqlCommand("SELECT COUNT(*) FROM  Kitaplar where tur='Fantastik' ", baglantı);
             fantastiklbl.Text = komut.ExecuteScalar().ToString();
 
-            komut = new SqlCommand("SELECT COUNT(*) FROM  Kitaplar where tur='Fantastik' ", baglantı);
-            fantastiklbl.Text = komut.ExecuteScalar().ToString();
+            komut = new SqlCommand("SELECT COUNT(*) FROM  Kitaplar where tur='Edebiyat' ", baglantı);
+            edebiyatlbl.Text = komut.ExecuteScalar().ToString();
+
+            komut = new SqlCommand("SELECT COUNT(*) FROM  Kitaplar where tur='Sanat' ", baglantı);
+            sanatlbl.Text = komut.ExecuteScalar().ToString();
+
+            komut = new SqlCommand("SELECT COUNT(*) FROM  Kitaplar where tur='Bilim-Kurgu' ", baglantı);
+            bilimkurgulbl.Text = komut.ExecuteScalar().ToString();
+
+            komut = new SqlCommand("SELECT COUNT(*) FROM  Kitaplar where tur='Tarih' ", baglantı);
+            tarihlbl.Text = komut.ExecuteScalar().ToString();
+
+            komut = new SqlCommand("SELECT COUNT(*) FROM  Kitaplar where tur='Egitim' ", baglantı);
+            egitimlbl.Text = komut.ExecuteScalar().ToString();
+
+            komut = new SqlCommand("SELECT COUNT(*) FROM  Kitaplar where tur='Teknoloji' ", baglantı);
+            teknolojilbl.Text = komut.ExecuteScalar().ToString();
+
+            komut = new SqlCommand("SELECT COUNT(*) FROM  Kitaplar where tur='Ask' ", baglantı);
+            asklbl.Text = komut.ExecuteScalar().ToString();
+
+            komut = new SqlCommand("SELECT COUNT(*) FROM  Kitaplar where tur='Aksiyon' ", baglantı);
+            aksiyonlbl.Text = komut.ExecuteScalar().ToString();
+
+            komut = new SqlCommand("SELECT COUNT(*) FROM  Kitaplar where tur='Bilim' ", baglantı);
+            bilimlbl.Text = komut.ExecuteScalar().ToString();
+
+            komut = new SqlCommand("SELECT COUNT(*) FROM  Kitaplar where tur='Tarih' ", baglantı);
+            tarihlbl.Text = komut.ExecuteScalar().ToString();
             baglantı.Close();
         }
 

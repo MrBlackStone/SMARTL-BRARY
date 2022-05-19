@@ -39,6 +39,7 @@ namespace SMARTLİBRARY
                 telefon_txt.Text = okuyucu["Telefon"].ToString();
                 maas_txt.Text = okuyucu["Maas"].ToString();
                 calisan_id_txt.Text = okuyucu["Calisan_id"].ToString();
+                fotograf_txt.Text = okuyucu["CalisanFotograf"].ToString();
                 pictureBox1.ImageLocation = Application.StartupPath + okuyucu["CalisanFotograf"].ToString();
 
 

@@ -76,7 +76,6 @@ namespace SMARTLİBRARY
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties18 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties19 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties20 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.CalisanAraBtn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.CalisanSilBtn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -96,7 +95,6 @@ namespace SMARTLİBRARY
             this.calisan_id_txt = new Bunifu.UI.WinForms.BunifuTextBox();
             this.CalisanTXT = new Bunifu.UI.WinForms.BunifuTextBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.CalisanCiktiAlBtn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CalisanlarDataGridView)).BeginInit();
             this.SuspendLayout();
@@ -249,7 +247,7 @@ namespace SMARTLİBRARY
             this.CalisanSilBtn.IdleIconLeftImage = null;
             this.CalisanSilBtn.IdleIconRightImage = null;
             this.CalisanSilBtn.IndicateFocus = false;
-            this.CalisanSilBtn.Location = new System.Drawing.Point(1142, 151);
+            this.CalisanSilBtn.Location = new System.Drawing.Point(1140, 182);
             this.CalisanSilBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.CalisanSilBtn.Name = "CalisanSilBtn";
             this.CalisanSilBtn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -284,7 +282,7 @@ namespace SMARTLİBRARY
             this.CalisanSilBtn.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.CalisanSilBtn.OnPressedState.IconLeftImage = null;
             this.CalisanSilBtn.OnPressedState.IconRightImage = null;
-            this.CalisanSilBtn.Size = new System.Drawing.Size(282, 54);
+            this.CalisanSilBtn.Size = new System.Drawing.Size(282, 74);
             this.CalisanSilBtn.TabIndex = 61;
             this.CalisanSilBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.CalisanSilBtn.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -340,7 +338,7 @@ namespace SMARTLİBRARY
             this.CalisanGuncelleBtn.IdleIconLeftImage = null;
             this.CalisanGuncelleBtn.IdleIconRightImage = null;
             this.CalisanGuncelleBtn.IndicateFocus = false;
-            this.CalisanGuncelleBtn.Location = new System.Drawing.Point(1143, 85);
+            this.CalisanGuncelleBtn.Location = new System.Drawing.Point(1140, 98);
             this.CalisanGuncelleBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.CalisanGuncelleBtn.Name = "CalisanGuncelleBtn";
             this.CalisanGuncelleBtn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -375,7 +373,7 @@ namespace SMARTLİBRARY
             this.CalisanGuncelleBtn.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.CalisanGuncelleBtn.OnPressedState.IconLeftImage = null;
             this.CalisanGuncelleBtn.OnPressedState.IconRightImage = null;
-            this.CalisanGuncelleBtn.Size = new System.Drawing.Size(282, 54);
+            this.CalisanGuncelleBtn.Size = new System.Drawing.Size(282, 74);
             this.CalisanGuncelleBtn.TabIndex = 60;
             this.CalisanGuncelleBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.CalisanGuncelleBtn.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -431,7 +429,7 @@ namespace SMARTLİBRARY
             this.calisanEkleBtn.IdleIconLeftImage = null;
             this.calisanEkleBtn.IdleIconRightImage = null;
             this.calisanEkleBtn.IndicateFocus = false;
-            this.calisanEkleBtn.Location = new System.Drawing.Point(1142, 18);
+            this.calisanEkleBtn.Location = new System.Drawing.Point(1140, 14);
             this.calisanEkleBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.calisanEkleBtn.Name = "calisanEkleBtn";
             this.calisanEkleBtn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -466,7 +464,7 @@ namespace SMARTLİBRARY
             this.calisanEkleBtn.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.calisanEkleBtn.OnPressedState.IconLeftImage = null;
             this.calisanEkleBtn.OnPressedState.IconRightImage = null;
-            this.calisanEkleBtn.Size = new System.Drawing.Size(282, 54);
+            this.calisanEkleBtn.Size = new System.Drawing.Size(282, 74);
             this.calisanEkleBtn.TabIndex = 59;
             this.calisanEkleBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.calisanEkleBtn.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1207,7 +1205,7 @@ namespace SMARTLİBRARY
             this.CalisanTemizleBtn.IdleIconLeftImage = null;
             this.CalisanTemizleBtn.IdleIconRightImage = null;
             this.CalisanTemizleBtn.IndicateFocus = false;
-            this.CalisanTemizleBtn.Location = new System.Drawing.Point(1143, 280);
+            this.CalisanTemizleBtn.Location = new System.Drawing.Point(1140, 266);
             this.CalisanTemizleBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.CalisanTemizleBtn.Name = "CalisanTemizleBtn";
             this.CalisanTemizleBtn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -1242,7 +1240,7 @@ namespace SMARTLİBRARY
             this.CalisanTemizleBtn.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.CalisanTemizleBtn.OnPressedState.IconLeftImage = null;
             this.CalisanTemizleBtn.OnPressedState.IconRightImage = null;
-            this.CalisanTemizleBtn.Size = new System.Drawing.Size(282, 54);
+            this.CalisanTemizleBtn.Size = new System.Drawing.Size(282, 74);
             this.CalisanTemizleBtn.TabIndex = 69;
             this.CalisanTemizleBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.CalisanTemizleBtn.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1401,96 +1399,6 @@ namespace SMARTLİBRARY
             this.CalisanTXT.UseSystemPasswordChar = false;
             this.CalisanTXT.WordWrap = true;
             // 
-            // CalisanCiktiAlBtn
-            // 
-            this.CalisanCiktiAlBtn.AllowAnimations = true;
-            this.CalisanCiktiAlBtn.AllowMouseEffects = true;
-            this.CalisanCiktiAlBtn.AllowToggling = false;
-            this.CalisanCiktiAlBtn.AnimationSpeed = 200;
-            this.CalisanCiktiAlBtn.AutoGenerateColors = false;
-            this.CalisanCiktiAlBtn.AutoRoundBorders = false;
-            this.CalisanCiktiAlBtn.AutoSizeLeftIcon = true;
-            this.CalisanCiktiAlBtn.AutoSizeRightIcon = true;
-            this.CalisanCiktiAlBtn.BackColor = System.Drawing.Color.Transparent;
-            this.CalisanCiktiAlBtn.BackColor1 = System.Drawing.Color.Purple;
-            this.CalisanCiktiAlBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CalisanCiktiAlBtn.BackgroundImage")));
-            this.CalisanCiktiAlBtn.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.CalisanCiktiAlBtn.ButtonText = "Çıktı Al";
-            this.CalisanCiktiAlBtn.ButtonTextMarginLeft = 0;
-            this.CalisanCiktiAlBtn.ColorContrastOnClick = 45;
-            this.CalisanCiktiAlBtn.ColorContrastOnHover = 45;
-            this.CalisanCiktiAlBtn.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges7.BottomLeft = true;
-            borderEdges7.BottomRight = true;
-            borderEdges7.TopLeft = true;
-            borderEdges7.TopRight = true;
-            this.CalisanCiktiAlBtn.CustomizableEdges = borderEdges7;
-            this.CalisanCiktiAlBtn.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.CalisanCiktiAlBtn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.CalisanCiktiAlBtn.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.CalisanCiktiAlBtn.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.CalisanCiktiAlBtn.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.CalisanCiktiAlBtn.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.CalisanCiktiAlBtn.ForeColor = System.Drawing.Color.White;
-            this.CalisanCiktiAlBtn.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.CalisanCiktiAlBtn.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.CalisanCiktiAlBtn.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
-            this.CalisanCiktiAlBtn.IconMarginLeft = 11;
-            this.CalisanCiktiAlBtn.IconPadding = 10;
-            this.CalisanCiktiAlBtn.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.CalisanCiktiAlBtn.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.CalisanCiktiAlBtn.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.CalisanCiktiAlBtn.IconSize = 25;
-            this.CalisanCiktiAlBtn.IdleBorderColor = System.Drawing.Color.Purple;
-            this.CalisanCiktiAlBtn.IdleBorderRadius = 1;
-            this.CalisanCiktiAlBtn.IdleBorderThickness = 1;
-            this.CalisanCiktiAlBtn.IdleFillColor = System.Drawing.Color.Purple;
-            this.CalisanCiktiAlBtn.IdleIconLeftImage = null;
-            this.CalisanCiktiAlBtn.IdleIconRightImage = null;
-            this.CalisanCiktiAlBtn.IndicateFocus = false;
-            this.CalisanCiktiAlBtn.Location = new System.Drawing.Point(1143, 217);
-            this.CalisanCiktiAlBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.CalisanCiktiAlBtn.Name = "CalisanCiktiAlBtn";
-            this.CalisanCiktiAlBtn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.CalisanCiktiAlBtn.OnDisabledState.BorderRadius = 1;
-            this.CalisanCiktiAlBtn.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.CalisanCiktiAlBtn.OnDisabledState.BorderThickness = 1;
-            this.CalisanCiktiAlBtn.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.CalisanCiktiAlBtn.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.CalisanCiktiAlBtn.OnDisabledState.IconLeftImage = null;
-            this.CalisanCiktiAlBtn.OnDisabledState.IconRightImage = null;
-            this.CalisanCiktiAlBtn.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.CalisanCiktiAlBtn.onHoverState.BorderRadius = 1;
-            this.CalisanCiktiAlBtn.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.CalisanCiktiAlBtn.onHoverState.BorderThickness = 1;
-            this.CalisanCiktiAlBtn.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.CalisanCiktiAlBtn.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.CalisanCiktiAlBtn.onHoverState.IconLeftImage = null;
-            this.CalisanCiktiAlBtn.onHoverState.IconRightImage = null;
-            this.CalisanCiktiAlBtn.OnIdleState.BorderColor = System.Drawing.Color.Purple;
-            this.CalisanCiktiAlBtn.OnIdleState.BorderRadius = 1;
-            this.CalisanCiktiAlBtn.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.CalisanCiktiAlBtn.OnIdleState.BorderThickness = 1;
-            this.CalisanCiktiAlBtn.OnIdleState.FillColor = System.Drawing.Color.Purple;
-            this.CalisanCiktiAlBtn.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.CalisanCiktiAlBtn.OnIdleState.IconLeftImage = null;
-            this.CalisanCiktiAlBtn.OnIdleState.IconRightImage = null;
-            this.CalisanCiktiAlBtn.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.CalisanCiktiAlBtn.OnPressedState.BorderRadius = 1;
-            this.CalisanCiktiAlBtn.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.CalisanCiktiAlBtn.OnPressedState.BorderThickness = 1;
-            this.CalisanCiktiAlBtn.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.CalisanCiktiAlBtn.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.CalisanCiktiAlBtn.OnPressedState.IconLeftImage = null;
-            this.CalisanCiktiAlBtn.OnPressedState.IconRightImage = null;
-            this.CalisanCiktiAlBtn.Size = new System.Drawing.Size(282, 54);
-            this.CalisanCiktiAlBtn.TabIndex = 63;
-            this.CalisanCiktiAlBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.CalisanCiktiAlBtn.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.CalisanCiktiAlBtn.TextMarginLeft = 0;
-            this.CalisanCiktiAlBtn.TextPadding = new System.Windows.Forms.Padding(0);
-            this.CalisanCiktiAlBtn.UseDefaultRadiusAndThickness = true;
-            // 
             // YoneticiCalisanlar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -1505,7 +1413,6 @@ namespace SMARTLİBRARY
             this.Controls.Add(this.resimSecBtn);
             this.Controls.Add(this.fotograf_txt);
             this.Controls.Add(this.CalisanAraBtn);
-            this.Controls.Add(this.CalisanCiktiAlBtn);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.CalisanSilBtn);
             this.Controls.Add(this.CalisanGuncelleBtn);
@@ -1548,6 +1455,5 @@ namespace SMARTLİBRARY
         private Bunifu.UI.WinForms.BunifuTextBox calisan_id_txt;
         private Bunifu.UI.WinForms.BunifuTextBox CalisanTXT;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton CalisanCiktiAlBtn;
     }
 }
