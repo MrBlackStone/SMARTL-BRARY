@@ -574,7 +574,7 @@ namespace SMARTLİBRARY
             this.bunifuButton6.AutoSizeLeftIcon = true;
             this.bunifuButton6.AutoSizeRightIcon = true;
             this.bunifuButton6.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuButton6.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(159)))), ((int)(((byte)(67)))));
+            this.bunifuButton6.BackColor1 = System.Drawing.Color.Firebrick;
             this.bunifuButton6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton6.BackgroundImage")));
             this.bunifuButton6.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bunifuButton6.ButtonText = "Çıkış";
@@ -606,7 +606,7 @@ namespace SMARTLİBRARY
             this.bunifuButton6.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(159)))), ((int)(((byte)(67)))));
             this.bunifuButton6.IdleBorderRadius = 1;
             this.bunifuButton6.IdleBorderThickness = 1;
-            this.bunifuButton6.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(159)))), ((int)(((byte)(67)))));
+            this.bunifuButton6.IdleFillColor = System.Drawing.Color.Firebrick;
             this.bunifuButton6.IdleIconLeftImage = null;
             this.bunifuButton6.IdleIconRightImage = null;
             this.bunifuButton6.IndicateFocus = false;
@@ -632,7 +632,7 @@ namespace SMARTLİBRARY
             this.bunifuButton6.OnIdleState.BorderRadius = 1;
             this.bunifuButton6.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bunifuButton6.OnIdleState.BorderThickness = 1;
-            this.bunifuButton6.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(159)))), ((int)(((byte)(67)))));
+            this.bunifuButton6.OnIdleState.FillColor = System.Drawing.Color.Firebrick;
             this.bunifuButton6.OnIdleState.ForeColor = System.Drawing.Color.White;
             this.bunifuButton6.OnIdleState.IconLeftImage = null;
             this.bunifuButton6.OnIdleState.IconRightImage = null;

@@ -15,7 +15,7 @@ namespace SMARTLİBRARY
     public partial class YoneticiCalisanlar : Form
     {
 
-        SqlConnection baglantı = new SqlConnection("Data Source=.;Initial Catalog=SmartLibrary;Integrated Security=True;Pooling=False");
+        SqlConnection baglantı = new SqlConnection("Data Source=localhost;Initial Catalog=SmartLibrary;Integrated Security=True;Pooling=False");
         SqlCommand komut = new SqlCommand();
         SqlDataAdapter adp = new SqlDataAdapter();
         DataSet ds = new DataSet();

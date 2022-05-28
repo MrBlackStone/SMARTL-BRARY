@@ -13,7 +13,7 @@ namespace SMARTLİBRARY
 {
     public partial class GirisPanel : Form
     {
-        SqlConnection baglantı = new SqlConnection("Data Source=.;Initial Catalog=SmartLibrary;Integrated Security=True;Pooling=False");
+        SqlConnection baglantı = new SqlConnection("Data Source=localhost;Initial Catalog=SmartLibrary;Integrated Security=True;Pooling=False");
         public static string uyeisimID = "";
         public GirisPanel()
         {
