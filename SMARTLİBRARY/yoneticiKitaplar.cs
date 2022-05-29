@@ -76,7 +76,16 @@ namespace SMARTLİBRARY
         private void kitapGuncelleBtn_Click(object sender, EventArgs e)
         {
             baglantı.Open();
-            komut = new SqlCommand("update Kitaplar set Kitap_isim='" + kitapİsim_txt.Text + "',Yazar='" + yazar_txt.Text + "',Tur='" + tur_txt.Text + "',Ozet='" + ozet_txt.Text + "',Sayfa='" + sayfa_sayi_txt.Text + "',Baski='" + baski_txt.Text + "',dil='" + dil_txt.Text + "',Fotograf='"+fotograf_txt.Text+"' where Kitap_id='" + kitap_id_txt.Text + "'", baglantı);
+            komut = new SqlCommand("update Kitaplar set Kitap_isim=@isim,Yazar=@yazar ,Tur=@tur,Ozet=@ozet,Sayfa=@sayfa,Baski=@baski ,dil=@dil,Fotograf=@foto where Kitap_id=@id", baglantı);
+            komut.Parameters.AddWithValue("isim",kitapİsim_txt.Text);
+            komut.Parameters.AddWithValue("yazar", yazar_txt.Text);
+            komut.Parameters.AddWithValue("tur", tur_txt.Text);
+            komut.Parameters.AddWithValue("ozet", ozet_txt.Text);
+            komut.Parameters.AddWithValue("sayfa",Convert.ToInt32(sayfa_sayi_txt.Text));
+            komut.Parameters.AddWithValue("dil", dil_txt.Text);
+            komut.Parameters.AddWithValue("foto", fotograf_txt.Text);
+            komut.Parameters.AddWithValue("id", Convert.ToInt32(kitap_id_txt.Text));
+            komut.Parameters.AddWithValue("baski", Convert.ToInt32(baski_txt.Text));
 
 
             komut.ExecuteNonQuery();

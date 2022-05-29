@@ -90,7 +90,7 @@ namespace SMARTLİBRARY
             pictureBox2.Image = null;
             baglantı.Open();
             ds.Clear();
-            adp.SelectCommand = new SqlCommand("SELECT Uyeler.Uye_İsim as 'Üye İsim', İstek_İsim as 'Kitap İsim', İstek_Yazar as Yazar,İstek_tur as Tür, Aciklama as Açıklama,İstek_Sayfa as Sayfa, istek_fotograf as Fotoğraf from Uyeİstekler INNER JOIN Uyeler ON Uyeİstekler.Fk_Uye_id = Uyeler.Uye_id", baglantı);
+            adp.SelectCommand = new SqlCommand("SELECT Uyeler.Uye_İsim as 'Üye İsim', İstek_İsim as 'Kitap İsim', İstek_Yazar as Yazar,İstek_tur as Tür, Aciklama as Açıklama, ozet as Özet,İstek_Sayfa as Sayfa, istek_fotograf as Fotoğraf from Uyeİstekler INNER JOIN Uyeler ON Uyeİstekler.Fk_Uye_id = Uyeler.Uye_id", baglantı);
             adp.Fill(ds, "OduncKitaplar");
             kitapDataGridView.DataSource = ds;
             kitapDataGridView.DataMember = "OduncKitaplar";
