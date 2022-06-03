@@ -55,7 +55,7 @@ namespace SMARTLİBRARY
         private void kitap_ekleBtn_Click(object sender, EventArgs e)
         {
             baglantı.Open();
-            komut = new SqlCommand("insert into Kitaplar(Kitap_isim,Yazar,Tur,Sayfa,Baski,dil,Fotograf)values(@kitap_isim,@yazar,@tur,@sayfa,@ozet,@dil,@foto)", baglantı);
+            komut = new SqlCommand("insert into Kitaplar(Kitap_isim,Yazar,Tur,Sayfa,Baski,dil,Ozet,Fotograf)values(@kitap_isim,@yazar,@tur,@sayfa,@baski,@dil,@ozet,@foto)", baglantı);
             komut.Parameters.AddWithValue("@kitap_isim", kitapİsim_txt.Text);
             komut.Parameters.AddWithValue("@yazar", yazar_txt.Text);
             komut.Parameters.AddWithValue("@tur", tur_txt.Text);
@@ -63,6 +63,7 @@ namespace SMARTLİBRARY
             komut.Parameters.AddWithValue("@dil", dil_txt.Text);
             komut.Parameters.AddWithValue("@foto", fotograf_txt.Text);
             komut.Parameters.AddWithValue("@ozet", ozet_txt.Text);
+            komut.Parameters.AddWithValue("@baski", baski_txt.Text);
             komut.ExecuteNonQuery();
             ds.Clear();
             MessageBox.Show("Kitap Eklendi");
@@ -85,7 +86,7 @@ namespace SMARTLİBRARY
             komut.Parameters.AddWithValue("dil", dil_txt.Text);
             komut.Parameters.AddWithValue("foto", fotograf_txt.Text);
             komut.Parameters.AddWithValue("id", Convert.ToInt32(kitap_id_txt.Text));
-            komut.Parameters.AddWithValue("baski", Convert.ToInt32(baski_txt.Text));
+            komut.Parameters.AddWithValue("baski", baski_txt.Text);
 
 
             komut.ExecuteNonQuery();
@@ -145,6 +146,11 @@ namespace SMARTLİBRARY
             fotograf_txt.Clear();
             sayfa_sayi_txt.Clear();
             kitap_id_txt.Clear();
+            ds.Clear();
+            adp.SelectCommand = new SqlCommand("select Kitap_id as Numara, Kitap_isim as 'Kitap Adı', Yazar , Tur, Ozet as Özet, Sayfa , Baski as Baskı, dil as Dil, Fotograf as Fotoğraf from Kitaplar ", baglantı);
+            adp.Fill(ds, "Kitaplar");
+            kitapGridView.DataSource = ds;
+            kitapGridView.DataMember = "Kitaplar";
         }
 
         private void kitapGridView_CellClick(object sender, DataGridViewCellEventArgs e)

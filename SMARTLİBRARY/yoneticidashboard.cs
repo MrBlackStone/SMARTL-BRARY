@@ -53,7 +53,7 @@ namespace SMARTLİBRARY
             komut = new SqlCommand("SELECT COUNT(*) FROM  Kitaplar where tur='Sanat' ", baglantı);
             sanatlbl.Text = komut.ExecuteScalar().ToString();
 
-            komut = new SqlCommand("SELECT COUNT(*) FROM  Kitaplar where tur='Bilim-Kurgu' ", baglantı);
+            komut = new SqlCommand("SELECT COUNT(*) FROM  Kitaplar where tur='BilimKurgu' ", baglantı);
             bilimkurgulbl.Text = komut.ExecuteScalar().ToString();
 
             komut = new SqlCommand("SELECT COUNT(*) FROM  Kitaplar where tur='Tarih' ", baglantı);

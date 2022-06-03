@@ -55,14 +55,14 @@ namespace SMARTLİBRARY
         {
             baglantı.Open();
             // komut = new SqlCommand("insert into Calisanlar(Calisan_isim,Calisan_adres,Rutbe,CalisanGirisTarihi,Telefon,Maas)values('"+adsoyad_txt.Text+"','"+adres_txt.Text+"','"+rutbe_txt.Text+"','"+baslamaTarih_txt.Text+"','"+telefon_txt.Text+"','"+maas_txt.Text+"')", baglantı);
-            komut = new SqlCommand("insert into Calisanlar(Calisan_isim,Calisan_adres,Rutbe,CalisanGirisTarihi,Telefon,Maas,CalisanFotograf)values(@Calisan_isim,@Calisan_adres,@Rutbe,@CalisanGirisTarihi,@Telefon,@Maas,@CalisanFotograf)", baglantı);
+            komut = new SqlCommand("insert into Calisanlar(Calisan_isim,Calisan_adres,Rutbe,CalisanGirisTarihi,Telefon,Maas,CalisanFotograf)values(@Calisan_isim,@Calisan_adres,@Rutbe,@CalisanGirisTarihi,@Telefon,@Maas,@Fotograf)", baglantı);
             komut.Parameters.AddWithValue("@Calisan_isim", adsoyad_txt.Text);
             komut.Parameters.AddWithValue("@Calisan_adres", adres_txt.Text);
             komut.Parameters.AddWithValue("@Rutbe", rutbe_txt.Text);
             komut.Parameters.AddWithValue("@CalisanGirisTarihi", baslamaTarih_txt.Text);
             komut.Parameters.AddWithValue("@Telefon", telefon_txt.Text);
             komut.Parameters.AddWithValue("@Maas", Convert.ToInt32(maas_txt.Text));
-            komut.Parameters.AddWithValue("@Fotograf", fotograf_txt);
+            komut.Parameters.AddWithValue("@Fotograf", fotograf_txt.Text);
             komut.ExecuteNonQuery();
             ds.Clear();
             MessageBox.Show("Çalışan Eklendi");
@@ -127,6 +127,11 @@ namespace SMARTLİBRARY
             adres_txt.Clear();
             fotograf_txt.Clear();
             rutbe_txt.Clear();
+            ds.Clear();
+            adp.SelectCommand = new SqlCommand("select Calisan_id as Numara, Calisan_isim as İsim, Calisan_adres as Adres, Telefon, Maas as Maaş, Rutbe as Rütbe, CalisanGirisTarihi as 'Giriş Tarihi', CalisanFotograf as Fotoğraf from Calisanlar", baglantı);
+            adp.Fill(ds, "Calisanlar");
+            CalisanlarDataGridView.DataSource = ds;
+            CalisanlarDataGridView.DataMember = "Calisanlar";
         }
 
         private void CalisanlarDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)

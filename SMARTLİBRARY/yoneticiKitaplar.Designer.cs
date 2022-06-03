@@ -1454,7 +1454,7 @@ namespace SMARTLİBRARY
             this.kitap_id_txt.PasswordChar = '\0';
             this.kitap_id_txt.PlaceholderForeColor = System.Drawing.Color.DimGray;
             this.kitap_id_txt.PlaceholderText = "İd";
-            this.kitap_id_txt.ReadOnly = false;
+            this.kitap_id_txt.ReadOnly = true;
             this.kitap_id_txt.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.kitap_id_txt.SelectedText = "";
             this.kitap_id_txt.SelectionLength = 0;

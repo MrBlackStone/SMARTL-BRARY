@@ -1200,7 +1200,7 @@ namespace SMARTLİBRARY
             this.id_txt.PasswordChar = '\0';
             this.id_txt.PlaceholderForeColor = System.Drawing.Color.DimGray;
             this.id_txt.PlaceholderText = "İd";
-            this.id_txt.ReadOnly = false;
+            this.id_txt.ReadOnly = true;
             this.id_txt.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.id_txt.SelectedText = "";
             this.id_txt.SelectionLength = 0;

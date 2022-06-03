@@ -38,7 +38,7 @@ namespace SMARTLİBRARY
             komut.ExecuteNonQuery();
             ds.Clear();
             MessageBox.Show("Üye Eklendi");
-            adp.SelectCommand = new SqlCommand("select Uye_id as Numara, Uye_İsim as İsim, Uye_Adres as Adres , Uye_Telefon as Telefon, UyelikTarihi as 'Üyelik Tarihi' , UyeBitisTarihi as 'Bitiş Tarihi', TcKimlik as Kimlik, Uye_Yas as Yaş from Uyeler", baglantı);
+            adp.SelectCommand = new SqlCommand("select Uye_id as Numara, Uye_İsim as İsim, Uye_Adres as Adres , Uye_Telefon as Telefon, UyelikTarihi as 'Üyelik Tarihi' , UyeBitisTarihi as 'Bitiş Tarihi', TcKimlik as Kimlik, Uye_Yas as Yaş, Uye_Fotograf as Fotoğraf from Uyeler", baglantı);
             adp.Fill(ds, "Uyeler");
             uyeGridView.DataSource = ds;
             uyeGridView.DataMember = "Uyeler";
@@ -137,6 +137,11 @@ namespace SMARTLİBRARY
             uyeKimlik_txt.Clear();
             uyeAra_txt.Clear();
             uyeFotograf_txt.Clear();
+            ds.Clear();
+            adp.SelectCommand = new SqlCommand("select Uye_id as Numara, Uye_İsim as İsim, Uye_Adres as Adres , Uye_Telefon as Telefon, UyelikTarihi as 'Üyelik Tarihi' , UyeBitisTarihi as 'Bitiş Tarihi', TcKimlik as Kimlik, Uye_Yas as Yaş, Uye_Fotograf as Fotoğraf from Uyeler", baglantı);
+            adp.Fill(ds, "Uyeler");
+            uyeGridView.DataSource = ds;
+            uyeGridView.DataMember = "Uyeler";
 
         }
         string resimyol;

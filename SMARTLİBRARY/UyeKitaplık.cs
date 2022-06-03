@@ -59,7 +59,7 @@ namespace SMARTLİBRARY
             yazar_txt.Text = kitaplikDataGridView.Rows[x].Cells[2].Value.ToString();
             tur_txt.Text = kitaplikDataGridView.Rows[x].Cells[3].Value.ToString();
             sayfa_txt.Text = kitaplikDataGridView.Rows[x].Cells[5].Value.ToString();
-            dil_txt.Text = kitaplikDataGridView.Rows[x].Cells[6].Value.ToString();
+            dil_txt.Text = kitaplikDataGridView.Rows[x].Cells[7].Value.ToString();
             ozet_txt.Text = kitaplikDataGridView.Rows[x].Cells[4].Value.ToString();
             baski_txt.Text = kitaplikDataGridView.Rows[x].Cells[6].Value.ToString();
 
@@ -153,7 +153,7 @@ namespace SMARTLİBRARY
         {
             baglantı.Open();
             ds.Clear();
-            adp.SelectCommand = new SqlCommand("select Kitap_id as Numara, Kitap_isim as 'Kitap Adı', Yazar , Tur, Ozet as Özet, Sayfa , Baski as Baskı, dil as Dil, Fotograf from Kitaplar where Tur='Bilim-Kurgu' ", baglantı);
+            adp.SelectCommand = new SqlCommand("select Kitap_id as Numara, Kitap_isim as 'Kitap Adı', Yazar , Tur, Ozet as Özet, Sayfa , Baski as Baskı, dil as Dil, Fotograf from Kitaplar where Tur='BilimKurgu' ", baglantı);
             adp.Fill(ds, "Kitaplar");
             kitaplikDataGridView.DataSource = ds;
             kitaplikDataGridView.DataMember = "Kitaplar";

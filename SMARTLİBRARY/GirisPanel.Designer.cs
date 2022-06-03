@@ -196,7 +196,7 @@ namespace SMARTLİBRARY
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.kullaniciAdTxt.OnIdleState = stateProperties4;
-            this.kullaniciAdTxt.Padding = new System.Windows.Forms.Padding(3);
+            this.kullaniciAdTxt.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.kullaniciAdTxt.PasswordChar = '\0';
             this.kullaniciAdTxt.PlaceholderForeColor = System.Drawing.Color.DimGray;
             this.kullaniciAdTxt.PlaceholderText = "Kullanıcı Adı";
@@ -225,7 +225,7 @@ namespace SMARTLİBRARY
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bunifuLabel1.ForeColor = System.Drawing.Color.Transparent;
-            this.bunifuLabel1.Location = new System.Drawing.Point(72, 19);
+            this.bunifuLabel1.Location = new System.Drawing.Point(75, 19);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel1.Size = new System.Drawing.Size(201, 45);
@@ -287,8 +287,8 @@ namespace SMARTLİBRARY
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.sifreTxt.OnIdleState = stateProperties8;
-            this.sifreTxt.Padding = new System.Windows.Forms.Padding(3);
-            this.sifreTxt.PasswordChar = '\0';
+            this.sifreTxt.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.sifreTxt.PasswordChar = '●';
             this.sifreTxt.PlaceholderForeColor = System.Drawing.Color.DimGray;
             this.sifreTxt.PlaceholderText = "Şifre";
             this.sifreTxt.ReadOnly = false;
@@ -305,7 +305,7 @@ namespace SMARTLİBRARY
             this.sifreTxt.TextMarginLeft = 3;
             this.sifreTxt.TextMarginTop = 0;
             this.sifreTxt.TextPlaceholder = "Şifre";
-            this.sifreTxt.UseSystemPasswordChar = false;
+            this.sifreTxt.UseSystemPasswordChar = true;
             this.sifreTxt.WordWrap = true;
             // 
             // bunifuLabel2
@@ -315,7 +315,7 @@ namespace SMARTLİBRARY
             this.bunifuLabel2.CursorType = null;
             this.bunifuLabel2.Font = new System.Drawing.Font("Segoe UI", 9.11F, System.Drawing.FontStyle.Bold);
             this.bunifuLabel2.ForeColor = System.Drawing.Color.White;
-            this.bunifuLabel2.Location = new System.Drawing.Point(12, 350);
+            this.bunifuLabel2.Location = new System.Drawing.Point(12, 340);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel2.Size = new System.Drawing.Size(317, 20);

@@ -1362,7 +1362,7 @@ namespace SMARTLİBRARY
             this.uyeİd_txt.IconRight = null;
             this.uyeİd_txt.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.uyeİd_txt.Lines = new string[0];
-            this.uyeİd_txt.Location = new System.Drawing.Point(16, 18);
+            this.uyeİd_txt.Location = new System.Drawing.Point(16, 19);
             this.uyeİd_txt.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uyeİd_txt.MaxLength = 32767;
             this.uyeİd_txt.MinimumSize = new System.Drawing.Size(2, 2);
@@ -1393,7 +1393,7 @@ namespace SMARTLİBRARY
             this.uyeİd_txt.PasswordChar = '\0';
             this.uyeİd_txt.PlaceholderForeColor = System.Drawing.Color.DimGray;
             this.uyeİd_txt.PlaceholderText = "Üye İd";
-            this.uyeİd_txt.ReadOnly = false;
+            this.uyeİd_txt.ReadOnly = true;
             this.uyeİd_txt.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.uyeİd_txt.SelectedText = "";
             this.uyeİd_txt.SelectionLength = 0;

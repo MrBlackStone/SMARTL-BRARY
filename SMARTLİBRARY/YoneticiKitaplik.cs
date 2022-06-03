@@ -129,7 +129,7 @@ namespace SMARTLİBRARY
         {
             baglantı.Open();
             ds.Clear();
-            adp.SelectCommand = new SqlCommand("select Kitap_id as Numara, Kitap_isim as 'Kitap Adı', Yazar , Tur, Ozet as Özet, Sayfa , Baski as Baskı, dil as Dil,Fotograf from Kitaplar where Tur='Bilim-Kurgu' ", baglantı);
+            adp.SelectCommand = new SqlCommand("select Kitap_id as Numara, Kitap_isim as 'Kitap Adı', Yazar , Tur, Ozet as Özet, Sayfa , Baski as Baskı, dil as Dil,Fotograf from Kitaplar where Tur='BilimKurgu' ", baglantı);
             adp.Fill(ds, "Kitaplar");
             kitaplikDataGridView.DataSource = ds;
             kitaplikDataGridView.DataMember = "Kitaplar";
@@ -281,6 +281,7 @@ namespace SMARTLİBRARY
                 ozet_txt.Text = okuyucu.GetValue(4).ToString();
                 sayfa_txt.Text = okuyucu.GetValue(5).ToString();
                 dil_txt.Text = okuyucu.GetValue(6).ToString();
+                pictureBox1.ImageLocation = Application.StartupPath + okuyucu.GetValue(7).ToString();
                 
 
             }
